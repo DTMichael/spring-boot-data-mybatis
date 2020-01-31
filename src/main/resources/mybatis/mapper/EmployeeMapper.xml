@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--mapper为根元素，namespace指定了命名空间-->
+<mapper namespace="com.atguigu.springboot.mapper.EmployeeMapper">
+    <!--验证用户登录-->
+    <select id="getEmpById" resultType="com.atguigu.springboot.bean.Employee">
+        SELECT * FROM employee WHERE id=#{id}
+    </select>
+    <insert id="insertEmp">
+        INSERT INTO employee(lastName,gender,email,dId) VALUES(#{lastName}，#{gender}，#{email}，#{dId})
+    </insert>
+</mapper>

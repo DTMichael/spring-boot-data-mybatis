@@ -1,5 +1,8 @@
 package com.atguigu.springboot.bean;
 
+import org.springframework.context.annotation.Bean;
+
+
 public class Department {
     private Integer id;
     private String departmentName;
